@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculator STUDEV PHL</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Calculator Q.#8</h1>
+  <div class="first-box">
+    <div class="second-box" id="box">
+      <b><input type="text" required placeholder="0" id="display" class="display">
+        <hr>
+      </b>
+      <div class="button" id="button">
+        <!--All Clear-->
+        <button class="bttn acbttn" onclick="allclr()">Ac</button>
+
+        <!--Delete-->
+        <button class="bttn opbttn" onclick="clr()">C</button>
+
+        <!--Multiply by itself-->
+        <button class="bttn opbttn" onclick="additm('**')">^</button>
+
+        <!--Division-->
+        <button class="bttn opbttn" onclick="additm('/')">÷</button>
+        <br>
+        <!--Add #7-->
+        <button class="bttn" onclick="additm('7')">7</button>
+
+        <!--Add #8-->
+        <button class="bttn" onclick="additm('8')">8</button>
+
+        <!--Add #9-->
+        <button class="bttn" onclick="additm('9')">9</button>
+
+        <!--Add x-->
+        <button class="bttn opbttn" onclick="additm('*')">×</button>
+        <br>
+        <!--Add #4-->
+        <button class="bttn" onclick="additm('4')">4</button>
+
+        <!--Add #5-->
+        <button class="bttn" onclick="additm('5')">5</button>
+
+        <!--Add #6-->
+        <button class="bttn" onclick="additm('6')">6</button>
+
+        <!--Add + -->
+        <button class="bttn opbttn" onclick="additm('+')">+</button>
+        <br>
+        <!--Add #1-->
+        <button class="bttn" onclick="additm('1')">1</button>
+
+        <!--Add #2-->
+        <button class="bttn" onclick="additm('2')">2</button>
+
+        <!--Add #3-->
+        <button class="bttn" onclick="additm('3')">3</button>
+
+        <!--Add (-)-->
+        <button class="bttn opbttn" onclick="additm('-')">-</button>
+        <br>
+        <!--Add #0-->
+        <button class="bttn" onclick="additm('0')">0</button>
+
+        <!--Add (.)-->
+        <button class="bttn" onclick="additm('.')">.</button>
+
+        <!--Add equal(=)-->
+        <button class="bttn eqbttn" onclick="equal()">=</button>
+      </div>
+    </div>
+  </div>
+
+  <h3>Chage a color:</h3>
+      <select id="select-color" class="selection">
+        <option value="transparent">Default</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="lightcoral">Light Coral</option>
+      </select>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
